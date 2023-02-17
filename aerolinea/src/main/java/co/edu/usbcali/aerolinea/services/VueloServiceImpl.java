@@ -66,6 +66,6 @@ public class VueloServiceImpl implements VueloService{
                         "201234",
                         "201234"
                 )
-        );;
+        );
     }
 }
