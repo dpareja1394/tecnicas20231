@@ -16,7 +16,7 @@ import java.util.List;
 @RequestMapping("/vuelo")
 public class VueloController {
 
-    private VueloService vueloService;
+    private final VueloService vueloService;
 
     public VueloController(VueloService vueloService) {
         this.vueloService = vueloService;
