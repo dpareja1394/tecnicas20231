@@ -13,16 +13,23 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "avion")
-public class Avion implements Serializable {
+@Table(name = "aeropuerto")
+public class Aeropuerto implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "AVIO_ID", nullable = false)
-    private Long avioId;
+    @Column(name = "AERO_ID", nullable = false)
+    private Long aeroId;
 
-    private String modelo;
+    @Column(nullable = false, length = 80)
+    private String nombre;
+
+    @Column(nullable = false, length = 5)
+    private String iata;
+
+    @Column(nullable = false, length = 80)
+    private String ubicacion;
 
     @Column(nullable = false)
     private String estado;

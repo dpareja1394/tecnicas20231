@@ -33,12 +33,8 @@ public class AvionServiceImpl implements AvionService{
     public AvionDTO guardarNuevoAvion(AvionDTO avionDTO) throws Exception {
 
         Avion avion = AvionMapper.dTOToDomain(avionDTO);
-        if(avion.getAerolinea() == null || avion.getAerolinea().trim().isEmpty()) {
-            throw new Exception("Debe ingresar la aerolínea");
-        }
-
-        if(avion.getMatricula() == null || avion.getMatricula().trim().isEmpty()) {
-            throw new Exception("Debe ingresar la matrícula");
+        if(avion.getModelo() == null || avion.getModelo().trim().isEmpty()) {
+            throw new Exception("Debe ingresar el Modelo");
         }
 
         return AvionMapper.domainToDTO(avionRepository.save(avion));

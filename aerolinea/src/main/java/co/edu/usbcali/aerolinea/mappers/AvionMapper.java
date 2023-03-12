@@ -10,9 +10,9 @@ public class AvionMapper {
 
     public static AvionDTO domainToDTO(Avion avion) {
         return AvionDTO.builder()
-                .id(avion.getId())
-                .matricula(avion.getMatricula())
-                .aerolinea(avion.getAerolinea())
+                .avioId(avion.getAvioId())
+                .modelo(avion.getModelo())
+                .estado(avion.getEstado())
                 .build();
     }
 
@@ -22,9 +22,9 @@ public class AvionMapper {
 
     public static Avion dTOToDomain(AvionDTO avionDTO) {
         return Avion.builder()
-                .id(avionDTO.getId())
-                .matricula(avionDTO.getMatricula())
-                .aerolinea(avionDTO.getAerolinea())
+                .avioId(avionDTO.getAvioId())
+                .modelo(avionDTO.getModelo())
+                .estado(avionDTO.getEstado())
                 .build();
     }
 
