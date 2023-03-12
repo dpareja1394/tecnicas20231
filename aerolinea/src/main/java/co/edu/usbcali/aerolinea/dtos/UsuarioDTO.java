@@ -9,10 +9,13 @@ import lombok.ToString;
 @AllArgsConstructor
 @Builder
 @ToString
-public class AeropuertoDTO {
-    private Integer aeroId;
+public class UsuarioDTO {
+    private Integer usuaId;
+    private Integer rousIdRolUsuario;
+    private String cedula;
     private String nombre;
-    private String iata;
-    private String ubicacion;
+    private String apellido;
+    private String correo;
     private String estado;
+    private String descripcionRolUsuario;
 }

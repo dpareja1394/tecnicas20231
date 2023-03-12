@@ -12,7 +12,7 @@ import java.util.Date;
 @Builder
 @ToString
 public class AvionDTO {
-    private Long avioId;
+    private Integer avioId;
     private String modelo;
     private String estado;
 

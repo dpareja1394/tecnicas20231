@@ -19,8 +19,8 @@ public class Aeropuerto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "AERO_ID", nullable = false)
-    private Long aeroId;
+    @Column(name = "aero_id", nullable = false)
+    private Integer aeroId;
 
     @Column(nullable = false, length = 80)
     private String nombre;

@@ -65,3 +65,17 @@ INSERT INTO public.aeropuerto(nombre, iata, ubicacion)
 VALUES ('Aeropuerto La Florida', 'TCO', 'Tumaco');
 INSERT INTO public.aeropuerto(nombre, iata, ubicacion) 
 VALUES ('Aeropuerto Simón Bolívar', 'SMR', 'Santa Marta');
+
+--Roles Usuario
+INSERT INTO public.rol_usuario(descripcion)
+VALUES('Viajero Frecuente');
+
+INSERT INTO public.rol_usuario(descripcion)
+VALUES('VIP');
+
+INSERT INTO public.rol_usuario(descripcion)
+VALUES('Viajero Ocasional');
+
+--Usuario 
+INSERT INTO public.usuario(rous_id, cedula, nombre, apellido, correo)
+VALUES(2, '101234', 'Daniel', 'Pareja Londoño', 'dpl@mail.com');
